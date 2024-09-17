@@ -1,5 +1,7 @@
 # Taller1Edatos
- 
+Integrantes: 
+Ferran Rojas,21.642.668-1,ferran.rojas@alumnos.ucn.cl,Paralelo C2 
+Maximiliano Urrutia,Paralelo C1
 # Sistema de Gestión de Biblioteca
 
 ## Descripción
