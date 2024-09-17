@@ -19,7 +19,7 @@ Este proyecto es un sistema de gestión de biblioteca que permite administrar us
 
 ## Instrucciones de uso
 
-1. Compilar el proyecto `g++ -g -o main .\MaterialBibliografico.cpp .\Revista.cpp .\Libro.cpp .\Usuario.cpp .\Impresora.cpp .\Sistema.cpp .\main.cpp`
+1. Compilar el proyecto ``` g++ -g -o main .\MaterialBibliografico.cpp .\Revista.cpp .\Libro.cpp .\Usuario.cpp .\Impresora.cpp .\Sistema.cpp .\main.cpp```
 2. ejecutar el archivo `main.exe`
 3. Seleccionar una opción del menú principal:
 	* Agregar material (1)
