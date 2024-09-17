@@ -1,7 +1,7 @@
 # Taller1Edatos
 Integrantes: 
-* Ferran Rojas, 21.642.668-1, ferran.rojas@alumnos.ucn.cl, Paralelo C2
-* Maximiliano Urrutia, RUT, CorreoInstitucional, Paralelo C1
+* Ferran Rojas Andreu, 21.642.668-1, ferran.rojas@alumnos.ucn.cl, Paralelo C2
+* Maximiliano Alberto Urrutia Araya, 21.573.565-6, maximiliano.urrutia@alumnos.ucn.cl, Paralelo C1
 # Sistema de Gestión de Biblioteca
 
 ## Descripción
