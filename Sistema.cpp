@@ -20,9 +20,14 @@ void Sistema::readUsuarios(std::string filename)
     }
 
     std::string line;
+    int i = 0;
     while (getline(file, line))
     {
-        crearUsuario(line);
+        if (i != 0)
+        {
+            crearUsuario(line);
+        }
+        i++;
         // process the line as needed
     }
 
@@ -46,9 +51,14 @@ void Sistema::readMateriales(std::string filename)
     }
 
     std::string line;
+    int i = 0;
     while (getline(file, line))
     {
-        agregarMaterial(line);
+        if (i != 0)
+        {
+            agregarMaterial(line);
+        }
+        i++;
         // process the line as needed
     }
 
@@ -71,7 +81,14 @@ void Sistema::writeUsuarios(std::string filename)
 
     for (int i = 0; i < numeroUsuarios; i++)
     {
-        file << usuarios[i]->toString() << std::endl;
+        if (i != 0)
+        {
+            file << usuarios[i]->toString() << std::endl;
+        }
+        else
+        {
+            file << "ID;NOMBRE" << std::endl;
+        }
     }
 
     file.close();
@@ -93,7 +110,14 @@ void Sistema::writeMateriales(std::string filename)
 
     for (int i = 0; i < numeroMateriales; i++)
     {
-        file << biblioteca[i]->toString() << std::endl;
+        if (i != 0)
+        {
+            file << biblioteca[i]->toString() << std::endl;
+        }
+        else
+        {
+            file << "TIPO;TITULO;ISBN;AUTOR;ESTADO;PARAMETROS_EXTRAS" << std::endl;
+        }
     }
 
     file.close();
@@ -536,7 +560,8 @@ void Sistema::guardarDatos()
     writeMateriales("Materiales.txt");
     std::cout << "se han guardado los cambios";
 }
-void Sistema::start(){
+void Sistema::start()
+{
     Impresora *impr = new Impresora();
     leerDatos();
 
@@ -747,11 +772,12 @@ void Sistema::start(){
     }
 
     std::cout << "\nSaliendo del programa..\n";
-    std::cout << "Desea guardar los datos ?\n";
+    std::cout << "Desea guardar los datos ?\n\n";
     std::cout << "   1. Si\n";
     std::cout << "   2. No\n";
+    std::cout << "\nSeleccione una opcion: ";
     getline(std::cin, input);
-    if (input == "1")
+    if (input == "1" || input=="si" || input=="Si")
     {
         guardarDatos();
     }
