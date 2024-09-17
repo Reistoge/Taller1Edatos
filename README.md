@@ -43,9 +43,9 @@ Este proyecto es un sistema de gestión de biblioteca que permite administrar us
 * `MaterialBibliografico.h` y `MaterialBibliografico.cpp`: archivos de cabecera e implementación de la clase `MaterialBibliografico`, que representa a un material (libro o revista) del sistema
 * `Libro.h` y `Libro.cpp`: archivos de cabecera e implementación de la clase `Libro`, que hereda de `MaterialBibliografico` y representa a un libro
 * `Revista.h` y `Revista.cpp`: archivos de cabecera e implementación de la clase `Revista`, que hereda de `MaterialBibliografico` y representa a una revista
+* `Materiales.txt` y `Usuarios.txt`: almacenamiento y persistencia de los datos, dentro de cada txt se encuentra el formato para cada material y usuario. 
 
 ## Notas
 
 * El sistema utiliza archivos de texto para almacenar la configuración y los datos de los usuarios y materiales.
-* El sistema no tiene una base de datos persistente, por lo que los datos se pierden cuando se cierra el programa.
 * El sistema no tiene autenticación ni autorización, por lo que cualquier usuario puede acceder a todas las funcionalidades.
