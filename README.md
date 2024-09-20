@@ -48,6 +48,11 @@ Este proyecto es un sistema de gestión de biblioteca que permite administrar us
 * `Materiales.txt` y `Usuarios.txt`: almacenamiento y persistencia de los datos, dentro de cada txt se encuentra el formato para cada material y usuario. 
 
 ## Notas
-
 * El sistema utiliza archivos de texto para almacenar la configuración y los datos de los usuarios y materiales.
 * El sistema no tiene autenticación ni autorización, por lo que cualquier usuario puede acceder a todas las funcionalidades.
+
+## Información sobre los objetos que se crean en el main durante el inicio del programa
+* Materiales: formato: `TIPO;TITULO;ISBN;AUTOR;ESTADO;PARAMETROS_EXTRAS` -> `Libro;Introduccion a la Programacion;978-3-16-148410-0;John Doe;disponible;2020-05-15;Un libro introductorio a la programacion`
+* Usuarios: formato: `ID;Nombre` -> `001;Carlos Lopez`
+ 
+
