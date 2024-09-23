@@ -242,7 +242,7 @@ void Sistema::mostrarInfoMateriales()
         std::cout << "\n";
     }
 
-    std::cout << "\LIBROS:  \n\n";
+    std::cout << "\nLIBROS:  \n\n";
     for (int i = 0; i < this->numeroLibros; ++i)
     {
         this->libros[i]->mostrarInformacion();
@@ -453,6 +453,20 @@ std::string Sistema::buscarUsuarioPorNombre(std::string input)
     }
     return response;
 }
+std::string Sistema::mostrarTodosUsuarios()
+{
+    std::string response = "";
+    response += "LISTADO DE TODOS LOS USUARIOS REGISTRADOS\n";
+    for (int i = 0; i < numeroUsuarios; i++)
+    {
+        response += "\nUSUARIO ENCONTRADO: " + usuarios[i]->getInfo();
+    }
+    if (response == "")
+    {
+        response += "NO SE HAN ENCONTRADO USUARIOS REGISTRADOS.";
+    }
+    return response;
+}
 std::string Sistema::buscarUsuarioPorID(std::string input)
 {
     // recorrer la ista de usuarios linealmente hasta encontrar
@@ -536,7 +550,8 @@ void Sistema::guardarDatos()
     writeMateriales("Materiales.txt");
     std::cout << "se han guardado los cambios";
 }
-void Sistema::start(){
+void Sistema::start()
+{
     Impresora *impr = new Impresora();
     leerDatos();
 
@@ -676,7 +691,7 @@ void Sistema::start(){
             }
             else
             {
-                std::cout << "hubieron problemas devolviendo el material, introduce correctamente la informacion" << std::endl;
+                std::cout << "hubieron problemas devolviendo el material, introduce correctamente la información" << std::endl;
             }
 
             //  sección para repetir opción
@@ -743,6 +758,10 @@ void Sistema::start(){
                     std::cout << "Hubieron problemas de formato, no se pudo eliminar al usuario" << std::endl;
                 }
             }
+            else if (input == "4")
+            {
+                std::cout<<mostrarTodosUsuarios();
+            }
         }
     }
 
@@ -751,7 +770,7 @@ void Sistema::start(){
     std::cout << "   1. Si\n";
     std::cout << "   2. No\n";
     getline(std::cin, input);
-    if (input == "1")
+    if (input == "1" || toLowercase(input) =="si")
     {
         guardarDatos();
     }

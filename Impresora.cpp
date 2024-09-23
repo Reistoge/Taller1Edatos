@@ -99,7 +99,8 @@ void Impresora::showGestionUsuarios()
               << "  1. Crear Usuario\n"
               << "  2. Buscar Usuario\n"
               << "  3. Eliminar Usuario\n"
-              << "  4. Volver al Menu Principal\n"
+              << "  4. Mostrar todos los Usuarios\n"
+              << "  5. Volver al Menu Principal\n"
               << "\nSeleccione una opcion: \n"
               << "\n--------------------------------\n";
 }

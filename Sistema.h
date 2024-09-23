@@ -33,7 +33,7 @@ public:
     Usuario *getUsuario(std::string idUsuario);
     bool crearUsuario(std::string input);
     bool eliminarUsuario(std::string input);
-
+    std::string mostrarTodosUsuarios();
     bool devolverMaterial(std::string idUsuario, std::string infoMaterial);
     bool prestarMaterial(std::string idMaterial, std::string idUsuario);
     std::string buscarUsuarioPorNombre(std::string input);
