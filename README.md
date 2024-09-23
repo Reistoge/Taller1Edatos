@@ -1,5 +1,7 @@
 # Taller1Edatos
- 
+Integrantes: 
+* Ferran Rojas Andreu, 21.642.668-1, ferran.rojas@alumnos.ucn.cl, Paralelo C2
+* Maximiliano Alberto Urrutia Araya, 21.573.565-6, maximiliano.urrutia@alumnos.ucn.cl, Paralelo C1
 # Sistema de Gestión de Biblioteca
 
 ## Descripción
@@ -17,7 +19,7 @@ Este proyecto es un sistema de gestión de biblioteca que permite administrar us
 
 ## Instrucciones de uso
 
-1. Compilar el proyecto `g++ -g -o main .\MaterialBibliografico.cpp .\Revista.cpp .\Libro.cpp .\Usuario.cpp .\Impresora.cpp .\Sistema.cpp .\main.cpp`
+1. Compilar el proyecto ``` g++ -g -o main .\MaterialBibliografico.cpp .\Revista.cpp .\Libro.cpp .\Usuario.cpp .\Impresora.cpp .\Sistema.cpp .\main.cpp```
 2. ejecutar el archivo `main.exe`
 3. Seleccionar una opción del menú principal:
 	* Agregar material (1)
@@ -46,6 +48,11 @@ Este proyecto es un sistema de gestión de biblioteca que permite administrar us
 * `Materiales.txt` y `Usuarios.txt`: almacenamiento y persistencia de los datos, dentro de cada txt se encuentra el formato para cada material y usuario. 
 
 ## Notas
-
 * El sistema utiliza archivos de texto para almacenar la configuración y los datos de los usuarios y materiales.
 * El sistema no tiene autenticación ni autorización, por lo que cualquier usuario puede acceder a todas las funcionalidades.
+
+## Información sobre los objetos que se crean en el main durante el inicio del programa
+* Materiales: formato: `TIPO;TITULO;ISBN;AUTOR;ESTADO;PARAMETROS_EXTRAS` -> `Libro;Introduccion a la Programacion;978-3-16-148410-0;John Doe;disponible;2020-05-15;Un libro introductorio a la programacion`
+* Usuarios: formato: `ID;Nombre` -> `001;Carlos Lopez`
+ 
+

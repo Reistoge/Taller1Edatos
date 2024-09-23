@@ -1,4 +1,4 @@
-001;Carlos Lopez
+ID;NOMBRE
 002;Maria Fernandez
 003;Jose Martinez
 004;Ana Gonzalez
